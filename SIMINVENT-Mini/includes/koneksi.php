@@ -1,13 +1,10 @@
 <?php
-// PENTING: isi kredensial di bawah ini hanya CONTOH/placeholder.
-// Ganti dengan kredensial database kamu sendiri sebelum dipakai,
-// dan JANGAN commit/upload file ini ke repository publik kalau
-// sudah diisi kredensial asli.
-$host = "localhost";
-$port = "5432";
-$db   = "siminvent_mini";
-$user = "postgres";
-$pass = "ganti_dengan_password_kamu";
+
+$host = getenv('DB_HOST');
+$port = getenv('DB_PORT') ?: '5432';
+$db   = getenv('DB_NAME') ?: 'postgres';
+$user = getenv('DB_USER');
+$pass = getenv('DB_PASSWORD');
 
 try {
     $pdo = new PDO(
