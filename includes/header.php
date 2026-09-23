@@ -18,8 +18,8 @@ function navActive($nama, $active)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SIMINVENT-Mini<?= isset($page_title) ? ' | ' . e($page_title) : '' ?></title>
-    <link rel="icon" href="<?= dirname($_SERVER['SCRIPT_NAME']) === '/' ? '' : dirname($_SERVER['SCRIPT_NAME']) ?>/assets/img/favicon.ico">
-    <link rel="stylesheet" href="<?= dirname($_SERVER['SCRIPT_NAME']) === '/' ? '' : dirname($_SERVER['SCRIPT_NAME']) ?>/assets/css/style.css">
+    <link rel="icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
