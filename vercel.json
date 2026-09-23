@@ -1,5 +1,18 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.php" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "Dockerfile.vercel",
+      "use": "@shyim/vercel-php"
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.php"
+    }
   ]
 }
